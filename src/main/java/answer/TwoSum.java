@@ -2,6 +2,7 @@ package main.java.answer;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -20,12 +21,13 @@ public class TwoSum {
      * 你可以按任意顺序返回答案。
      * <p>
      * 来源：力扣（LeetCode） 链接：https://leetcode-cn.com/problems/two-sum 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     * O(n)
      *
      * @param nums
      * @param target
      * @return
      */
-    public static  int[] twoSum(int[] nums, int target) {
+    public static int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         if (null == nums) {
             return result;
@@ -34,24 +36,26 @@ public class TwoSum {
         for (int i = 0; i < nums.length; i++) {
             int a = nums[i];
             if (null != map.get(target - a)) {
-                result[0] = map.get(target-a);
+                result[0] = map.get(target - a);
                 result[1] = i;
                 break;
             }
-            map.put(a,i);
+            map.put(a, i);
         }
         return result;
     }
 
     public static void main(String[] args) {
-       int[] nums =new int[]{2,7,11,15};
-       int target = 17;
-        System.out.println(Arrays.toString(twoSum(nums,target)));
-        int[] nums1 =new int[]{3,2,4};
+        int[] nums = new int[]{2, 7, 11, 15};
+        int target = 17;
+        System.out.println(Arrays.toString(twoSum(nums, target)));
+        int[] nums1 = new int[]{3, 2, 4};
         int target1 = 6;
-        System.out.println(Arrays.toString(twoSum(nums1,target1)));
-        int[] nums2 =new int[]{3,3};
+        System.out.println(Arrays.toString(twoSum(nums1, target1)));
+        int[] nums2 = new int[]{3, 3};
         int target2 = 6;
-        System.out.println(Arrays.toString(twoSum(nums2,target2)));
+        System.out.println(Arrays.toString(twoSum(nums2, target2)));
     }
+
+
 }
