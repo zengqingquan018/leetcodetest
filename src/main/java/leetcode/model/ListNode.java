@@ -1,4 +1,4 @@
-package main.java.model;
+package main.java.leetcode.model;
 
 
 /**
@@ -41,12 +41,24 @@ public class ListNode {
                 l1.val = tmp % 10;
             }
             addNumber = tmp / 10;
-            l1.next = addTwoNumbers(l1.next, null == l2 ? null: l2.next, addNumber);
+            l1.next = addTwoNumbers(l1.next, null == l2 ? null : l2.next, addNumber);
         } else {
             return addNumber == 0 ? null : new ListNode(addNumber);
         }
         return l1;
     }
 
+    public static void main(String[] args) {
+        int a = 1;
+        int b = a;
+        a++;
+        System.out.println(a);
+        System.out.println(b);
+        int [][] c = new  int[2][2];
+        c[1][1] = 5;
+        c[0][0] =  c[1][1];
+        c[1][1]=33;
+        System.out.println(c[0][0]);
+     }
 }
 

@@ -1,8 +1,7 @@
-package main.java.answer;
+package main.java.leetcode.answer;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**

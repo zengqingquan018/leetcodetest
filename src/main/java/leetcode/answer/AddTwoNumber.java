@@ -1,8 +1,8 @@
-package main.java.answer;
+package main.java.leetcode.answer;
 
 
 import java.util.Random;
-import main.java.model.ListNode;
+import main.java.leetcode.model.ListNode;
 
 /**
  * 描述：给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。

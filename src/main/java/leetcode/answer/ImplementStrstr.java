@@ -1,4 +1,4 @@
-package main.java.answer;
+package main.java.leetcode.answer;
 
 /**
  * 描述：实现 strStr() 函数。
