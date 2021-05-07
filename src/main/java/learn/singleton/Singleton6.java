@@ -13,10 +13,15 @@ public class Singleton6 {
         }
     }
     private Singleton6() {
+        System.out.println("Singleton6实例化");
     }
 
-    public Singleton6 getSingleton5(){
+    public static  Singleton6 getSingleton6(){
         return SingletonHolder.instance;
     }
 
+
+    public static void  getTest(){
+        System.out.println("22222");
+    }
 }

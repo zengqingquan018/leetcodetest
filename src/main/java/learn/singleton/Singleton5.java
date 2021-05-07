@@ -9,10 +9,16 @@ package main.java.learn.singleton;
 public class Singleton5 {
 
     private static final Singleton5 instance = new Singleton5();
+
     private Singleton5() {
-    }
-    public Singleton5 getSingleton5(){
-        return getSingleton5();
+        System.out.println("Singleton5实例化");
     }
 
+    public static Singleton5 getSingleton5() {
+        return instance;
+    }
+
+    public static void  getTest(){
+        System.out.println("22222");
+    }
 }
