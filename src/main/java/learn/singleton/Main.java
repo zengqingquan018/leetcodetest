@@ -9,9 +9,27 @@ package main.java.learn.singleton;
 public class Main {
 
     public static void main(String[] args) {
-       /* Singleton5 singleton5 =Singleton5.getTest();
-        Singleton6 singleton6 = Singleton6.get();*/
-       Singleton5.getTest();
-       Singleton6.getTest();
+        Node<Integer> a ;
+        Node<Integer> b ;
+        a =b= new Node<>(null);
+        Node<Integer> node = new Node<>(1);
+        Node<Integer> node2 = new Node<>(1);
+        a = a.next = node;
+        a = a.next = node2;
+        System.out.println("1111");
+    }
+
+    static class Node<E> {
+        E item;
+
+        /**
+         * One of:
+         * - the real successor Node
+         * - this Node, meaning the successor is head.next
+         * - null, meaning there is no successor (this is the last node)
+         */
+        Node<E> next;
+
+        Node(E x) { item = x; }
     }
 }
