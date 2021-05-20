@@ -46,7 +46,7 @@ public class LongestPalindrome {
         System.out.println(longestPalindrome(s));
         s = "babad";
         System.out.println(longestPalindrome(s));
-        s="ac";
+        s = "ac";
         System.out.println(longestPalindrome(s));
     }
 }
